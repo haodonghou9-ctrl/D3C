@@ -164,28 +164,7 @@ The dataset name must match the corresponding entry in `configs.yaml`.
 
 ---
 
-## 4. Prepare the Pre-trained Checkpoint
-
-For COIL-20, three views are configured:
-
-```yaml
-views_total: 3
-```
-
-Therefore, the final trained checkpoint is:
-
-```text
-last_sim_model/
-└── coil-20_dual_offline/
-    └── best_model_view2.pth
-```
-
-The evaluation script automatically loads the checkpoint corresponding to the
-last configured view.
-
----
-
-## 5. Evaluate the Pre-trained Model
+## 4. Evaluate the Pre-trained Model
 
 Run:
 
