@@ -11,15 +11,15 @@ DOI: `10.1145/3767308.3835617`
 
 ---
 
-## Environment
+## Installation
 
 The code was trained and tested with the following environment:
 
 ```text
-Python       3.8.20
-PyTorch      1.12.1
-torchvision  0.13.1
-torchaudio   0.12.1
+Python>=3.8
+PyTorch==1.12.1
+torchvision==0.13.1
+torchaudio==0.12.1
 ```
 
 Create a Conda environment:
