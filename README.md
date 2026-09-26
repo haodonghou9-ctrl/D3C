@@ -74,6 +74,8 @@ All datasets are loaded from:
 
 Please place the dataset files under `MyData/` in the format expected by
 `data_load.py`.
+The provided datasets are at the following link:
+* [https://drive.google.com/drive/folders/1Y5Jdo_dUqFMdr0KrwImAGNsDX7r5lg-X?usp=sharing]
 
 ---
 
@@ -153,8 +155,6 @@ Place the dataset under:
 ```text
 ./MyData/
 ```
-The provided datasets are at the following link:
-* [https://drive.google.com/drive/folders/1Y5Jdo_dUqFMdr0KrwImAGNsDX7r5lg-X?usp=sharing]
 
 For example, the default evaluation script currently uses:
 
