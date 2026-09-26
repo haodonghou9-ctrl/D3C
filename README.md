@@ -21,15 +21,6 @@ PyTorch==1.12.1
 torchvision==0.13.1
 torchaudio==0.12.1
 ```
-
-Create a Conda environment:
-
-```bash
-conda create -n d3c python=3.8.20
-conda activate d3c
-pip install -r requirements.txt
-```
-
 The experiments reported in the paper were conducted on a single
 **NVIDIA RTX 3090 GPU with 24 GB memory**.
 
