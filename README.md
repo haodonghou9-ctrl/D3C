@@ -139,7 +139,7 @@ git lfs pull
 ## 2. Create the Environment
 
 ```bash
-conda create -n d3c python=3.8.20
+conda create -n d3c python>=3.8.20
 conda activate d3c
 pip install -r requirements.txt
 ```
