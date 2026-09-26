@@ -357,25 +357,6 @@ controlled by:
 ```yaml
 epochs:
 ```
-
-in `configs.yaml`.
-
-For example:
-
-```yaml
-coil-20:
-  epochs: 50
-```
-
-means:
-
-```text
-Expert / Teacher training : 50 epochs
-Base / Student training   : 50 epochs
-```
-
-Dataset-specific values can be modified directly in `configs.yaml`.
-
 ---
 
 
