@@ -1,0 +1,85 @@
+defaults:
+  root: "./MyData"
+  seed: 3407
+  cuda_device: "0"
+  num_workers: 8
+  method: "Adam"
+  beta: 0.9
+  wd: 0.0
+  steps: 1
+  episodic: False
+  up_alpha: 0.7
+
+datasets:
+  # === COIL-100 (64x64) ===
+  coil-100:
+    class_num: 100
+    views_total: 3
+    num_ex: 1920
+    in_channel: 3
+    crop_size: 64
+    c_dim: 20
+    batch_size: 64
+    lr: 0.00001
+    epochs: 50
+    # 双流特定权重
+    contra: 1.0   # 结构
+    consis: 1.0   # 对比
+
+    alpha_recon: 0.01
+    lambda_distill: 0.5
+    network:
+      basic_hidden: 32
+      latent_ch: 8
+      block_size: 8
+      ch_mult: [1, 2, 4,8]
+
+  # === COIL-20 (64x64) ===
+  coil-20:
+    class_num: 20
+    views_total: 3
+    num_ex: 480
+    in_channel: 1
+    crop_size: 64
+    c_dim: 20
+    batch_size: 128
+    lr: 0.0001
+    epochs: 50
+    # 双流特定权重
+    contra: 1.0   # 结构
+    consis: 1.0   # 对比
+    network:
+      basic_hidden: 32
+      latent_ch: 8
+      block_size: 8
+      ch_mult: [1, 2, 4,8]
+
+
+
+
+  # === office-home (64x64) ===
+  OfficeHome:
+    class_num: 65
+    views_total: 4
+    num_ex: 5414
+    in_channel: 3
+    crop_size: 64
+    c_dim: 20
+    batch_size: 128
+    lr: 0.00001
+    epochs: 50
+
+    contra: 1.0
+    consis: 1.0
+
+    alpha_recon: 0.01
+    lambda_distill: 0.5
+    network:
+      basic_hidden: 32
+      latent_ch: 8
+      block_size: 8
+      ch_mult: [ 1, 2, 4,8 ]
+
+
+
+      
