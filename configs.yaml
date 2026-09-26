@@ -22,9 +22,9 @@ datasets:
     batch_size: 64
     lr: 0.00001
     epochs: 50
-    # 双流特定权重
-    contra: 1.0   # 结构
-    consis: 1.0   # 对比
+    
+    contra: 1.0   
+    consis: 1.0   
 
     alpha_recon: 0.01
     lambda_distill: 0.5
@@ -45,9 +45,9 @@ datasets:
     batch_size: 128
     lr: 0.0001
     epochs: 50
-    # 双流特定权重
-    contra: 1.0   # 结构
-    consis: 1.0   # 对比
+    
+    contra: 1.0   
+    consis: 1.0   
     network:
       basic_hidden: 32
       latent_ch: 8
