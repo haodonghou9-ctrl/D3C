@@ -266,4 +266,4 @@ Part of our code and methodology is inspired by and built upon **AdaptCMVC**. If
 
 ## Contact
 
-For questions regarding the paper or implementation, please contact us.
+For questions regarding the paper or implementation, please contact us. Have a nice day！
